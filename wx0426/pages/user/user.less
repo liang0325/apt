@@ -1,0 +1,95 @@
+.apt-user{background-color: #F0F0F0;
+  .apt-user-profile {
+    background-color: white;
+    height: 350rpx;
+      position: relative;
+    
+    .user-profile-bp {
+        image {
+          height: 330rpx;
+          filter: blur(15rpx);
+        }
+    }
+
+      .image-wrapper {
+        image {
+          width: 150rpx;
+          height: 150rpx;
+          border-radius:50%;
+          position: absolute;
+          top: 50rpx;
+          left:50%;
+          transform: translatex(-50%);
+        }
+      }
+      button{
+        background-color: white;
+        color: red;
+        border-radius: 5rpx;
+        border: 1px solid red;
+        position: absolute;
+        top: 100rpx;
+        left:50%;
+        transform: translatex(-50%);
+    }
+      .nickname {
+        position: absolute;
+        top: 200rpx;
+        left:50%;
+        transform: translatex(-50%);
+        color: white;
+    }
+  
+}
+  .apt-order{
+    .apt-user-order {
+        background-color: white;
+        margin-top: 20rpx;
+        margin-bottom: 10rpx;
+        height: 150rpx;
+        display: flex;
+        align-items: center;
+      .order-item {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .iconfont {
+          font-size: 50rpx;
+        }
+
+        .text {
+          font-size: 30rpx;
+        }
+      }
+    }
+  }
+  .apt-user-sys {
+    .system-item {
+      background-color: white;
+      height: 120rpx;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid lightgray;
+      .left {
+        display: flex;
+        align-items: center;
+        .iconfont{
+          margin-left: 20rpx;
+          font-size: 50rpx;
+          margin-right:30rpx ;
+        }
+  
+        .text {
+          font-size: 30rpx;
+        }
+      }
+  
+      .right {
+        margin: 20rpx;
+        font-size: 30rpx;
+      }
+    }
+  }
+}

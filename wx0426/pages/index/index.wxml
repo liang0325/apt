@@ -1,0 +1,34 @@
+<view class="apt-index">
+  <view class="apt-search">
+    <navigator>
+     搜索
+    </navigator>
+  </view>
+<!-- 轮播图 -->
+  <view apt-index-swiper>
+    <swiper indicator-dots="true" autoplay="true" interval="1500" circular="true">
+      <swiper-item wx:for='{{swiper_list}}' wx:key='*this'>
+        <image src="{{item.image_src}}" />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 导航 -->
+  <view class="apt-index-daohang">
+    <navigator wx:for="{{catItems}}" wx:key='*this'>
+      <image src="{{item.image_src}}" />
+    </navigator>
+  </view>
+  <!-- 列表图片 -->
+  <view class="apt-index-floor">
+    <view class="floorList" wx:for="{{floorData}}" wx:key="*this">
+      <view class="titleName">
+      {{item.floor_title.name}}
+      </view>
+      <view class="floorWapper">  
+        <navigator wx:for="{{item.product_list}}" wx:for-item="v" wx:key="*this">
+          <image src="{{v.image_src}}" />
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

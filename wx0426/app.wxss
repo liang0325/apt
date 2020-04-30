@@ -1,0 +1,10 @@
+@import "./tubiao/iconfont.wxss";
+view,swiper,navigator,swiper-item{
+  margin:0rpx;
+  padding:0rpx;
+  box-sizing: border-box;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
